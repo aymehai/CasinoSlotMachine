@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var imgSlot1: UIImageView!
     @IBOutlet weak var imgSlot2: UIImageView!
     @IBOutlet weak var imgSlot3: UIImageView!
+    @IBOutlet weak var userBet: UILabel!
+    @IBOutlet weak var userMoney: UILabel!
     
     @IBAction func btnRoll(_ sender: Any) {
         
