@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var imgSlot1: UIImageView!
     @IBOutlet weak var imgSlot2: UIImageView!
     @IBOutlet weak var imgSlot3: UIImageView!
+    @IBOutlet weak var userBet: UILabel!
     
     @IBAction func btnRoll(_ sender: Any) {
         
@@ -29,6 +30,25 @@ class ViewController: UIViewController {
         imgSlot2.image = suitArray[num2]
         imgSlot3.image = suitArray[num3]
         
+    }
+    
+    @IBAction func placeBetAlert(_ sender: Any) {
+        let alertController = UIAlertController(title: "BET AMOUNT", message: "Place Your Bet", preferredStyle: UIAlertControllerStyle.alert)
+        
+        alertController.addTextField(configurationHandler: {(betField) in betField.text = ""
+            betField.placeholder="$0.00"
+            betField.isSecureTextEntry=false
+        })
+        
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: {[weak alertController](_) in
+            let betField = alertController?.textFields![0]
+            
+            let bet = betField?.text
+            self.userBet.text=bet
+            
+        }))
+        
+        present(alertController,animated: true,completion: nil)
     }
 
     override func viewDidLoad() {
