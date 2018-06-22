@@ -38,19 +38,39 @@ class ViewController: UIViewController {
         
     }
     
-    func allClubs(num1: Int, num2: Int, num3: Int){
+    
+    @IBAction func placeBetAlert(_ sender: Any) {
+                let alertController = UIAlertController(title: "BET AMOUNT", message: "Place Your Bet", preferredStyle: UIAlertControllerStyle.alert)
         
-        if(num1 == 0 && num2 == 0 && num3 == 0)
-        {
-            //10* the bet: money + (bet*10)
-            
-        } else {
-            
-            //lose: money - bet
-        }
+                alertController.addTextField(configurationHandler: {(betField) in betField.text = ""
+                    betField.placeholder="$0"
+                    betField.isSecureTextEntry=false
+                })
         
+                alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: {[weak alertController](_) in
+                    let betField = alertController?.textFields![0]
         
-    }
+                    let bet = betField?.text
+                    self.userBet.text=bet
+        
+                }))
+        
+                present(alertController,animated: true,completion: nil)
+            }
+    
+//    func allClubs(num1: Int, num2: Int, num3: Int){
+//
+//        if(num1 == 0 && num2 == 0 && num3 == 0)
+//        {
+//            //10* the bet: money + (bet*10)
+//
+//        } else {
+//
+//            //lose: money - bet
+//        }
+//
+//
+//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
