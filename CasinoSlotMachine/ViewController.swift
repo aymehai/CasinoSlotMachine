@@ -9,6 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var imgSlot1: UIImageView!
+    @IBOutlet weak var imgSlot2: UIImageView!
+    @IBOutlet weak var imgSlot3: UIImageView!
+    
+    @IBAction func btnRoll(_ sender: Any) {
+        
+        //creates three random numbers
+        let num1:Int = Int(arc4random_uniform(4))
+        let num2:Int = Int(arc4random_uniform(4))
+        let num3:Int = Int(arc4random_uniform(4))
+        
+        //creates an ArrayList that stores the card suit images
+        var suitArray = [UIImage(named: "Club.jpg"), UIImage(named: "Diamond.jpg"), UIImage(named: "Heart.jpg"), UIImage(named: "Spade.jpg")]
+            
+        //uses the random numbers as an index from the ArrayList and reassigns the imgSlots images to random ones
+        imgSlot1.image = suitArray[num1]
+        imgSlot2.image = suitArray[num2]
+        imgSlot3.image = suitArray[num3]
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
