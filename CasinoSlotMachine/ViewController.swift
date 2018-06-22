@@ -58,20 +58,6 @@ class ViewController: UIViewController {
                 present(alertController,animated: true,completion: nil)
             }
     
-//    func allClubs(num1: Int, num2: Int, num3: Int){
-//
-//        if(num1 == 0 && num2 == 0 && num3 == 0)
-//        {
-//            //10* the bet: money + (bet*10)
-//
-//        } else {
-//
-//            //lose: money - bet
-//        }
-//
-//
-//    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

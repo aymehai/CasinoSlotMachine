@@ -14,6 +14,8 @@
 		E13F102820DD77BF00F3246F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E13F102620DD77BF00F3246F /* LaunchScreen.storyboard */; };
 		E13F103320DD77C000F3246F /* CasinoSlotMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13F103220DD77C000F3246F /* CasinoSlotMachineTests.swift */; };
 		E13F103E20DD77C000F3246F /* CasinoSlotMachineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13F103D20DD77C000F3246F /* CasinoSlotMachineUITests.swift */; };
+		E13F105620DD926900F3246F /* AnesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13F105520DD926900F3246F /* AnesController.swift */; };
+		E13F105820DD927800F3246F /* AymenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13F105720DD927800F3246F /* AymenController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		E13F103920DD77C000F3246F /* CasinoSlotMachineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CasinoSlotMachineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E13F103D20DD77C000F3246F /* CasinoSlotMachineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasinoSlotMachineUITests.swift; sourceTree = "<group>"; };
 		E13F103F20DD77C000F3246F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E13F105520DD926900F3246F /* AnesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnesController.swift; sourceTree = "<group>"; };
+		E13F105720DD927800F3246F /* AymenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AymenController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				E13F101D20DD77BF00F3246F /* AppDelegate.swift */,
 				E13F101F20DD77BF00F3246F /* ViewController.swift */,
+				E13F105520DD926900F3246F /* AnesController.swift */,
+				E13F105720DD927800F3246F /* AymenController.swift */,
 				E13F102120DD77BF00F3246F /* Main.storyboard */,
 				E13F102420DD77BF00F3246F /* Assets.xcassets */,
 				E13F102620DD77BF00F3246F /* LaunchScreen.storyboard */,
@@ -258,6 +264,8 @@
 			files = (
 				E13F102020DD77BF00F3246F /* ViewController.swift in Sources */,
 				E13F101E20DD77BF00F3246F /* AppDelegate.swift in Sources */,
+				E13F105820DD927800F3246F /* AymenController.swift in Sources */,
+				E13F105620DD926900F3246F /* AnesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
