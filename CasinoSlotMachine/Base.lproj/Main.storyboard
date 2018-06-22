@@ -51,6 +51,9 @@
                                 <state key="normal" title="PLACE BET">
                                     <color key="titleColor" red="1" green="0.178440406" blue="0.87924314609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="placeBetAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Zl-Vo-B4S"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MONEY:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbf-CW-DIe">
                                 <rect key="frame" x="16" y="215" width="64" height="21"/>
@@ -81,6 +84,20 @@
                                 <rect key="frame" x="259" y="100" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BET:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ons-Cv-OSN">
+                                <rect key="frame" x="16" y="235" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.44343317770000001" green="1" blue="0.42630901409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hs3-Jy-pxc">
+                                <rect key="frame" x="55" y="235" width="56" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99000235530000003" green="1" blue="0.077165735880000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -89,6 +106,7 @@
                         <outlet property="imgSlot1" destination="soQ-UG-wVE" id="8rI-5Q-afX"/>
                         <outlet property="imgSlot2" destination="iZ2-C2-r9P" id="MqY-5j-Ii8"/>
                         <outlet property="imgSlot3" destination="pDg-yB-L9B" id="8Mn-ze-4Ep"/>
+                        <outlet property="userBet" destination="Hs3-Jy-pxc" id="P90-4z-Wfx"/>
                         <outlet property="userMoney" destination="dAL-ef-Inb" id="dPb-DJ-LLg"/>
                     </connections>
                 </viewController>

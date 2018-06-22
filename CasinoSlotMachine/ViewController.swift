@@ -42,15 +42,13 @@ class ViewController: UIViewController {
     //function that is called to check if any pairs. If no paids send off to check if any other pairs
     func allClubs(num1: Int, num2: Int, num3: Int){
         
-        if(num1 == 0 && num2 == 0 && num3 == 0)
-        {
-            //10* the bet: money + (bet*10)
-            
-        } else {
-            
-            //lose: money - bet
-        }
+                alertController.addTextField(configurationHandler: {(betField) in betField.text = ""
+                    betField.placeholder="$0"
+                    betField.isSecureTextEntry=false
+                })
         
+                alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: {[weak alertController](_) in
+                    let betField = alertController?.textFields![0]
         
     }
     
