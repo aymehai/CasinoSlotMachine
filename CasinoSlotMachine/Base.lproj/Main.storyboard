@@ -89,7 +89,6 @@
                         <outlet property="imgSlot1" destination="soQ-UG-wVE" id="8rI-5Q-afX"/>
                         <outlet property="imgSlot2" destination="iZ2-C2-r9P" id="MqY-5j-Ii8"/>
                         <outlet property="imgSlot3" destination="pDg-yB-L9B" id="8Mn-ze-4Ep"/>
-                        <outlet property="userBet" destination="c9n-vI-LbK" id="dAd-vN-Iw9"/>
                         <outlet property="userMoney" destination="dAL-ef-Inb" id="dPb-DJ-LLg"/>
                     </connections>
                 </viewController>
