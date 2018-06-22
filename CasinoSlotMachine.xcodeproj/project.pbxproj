@@ -14,11 +14,6 @@
 		E13F102820DD77BF00F3246F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E13F102620DD77BF00F3246F /* LaunchScreen.storyboard */; };
 		E13F103320DD77C000F3246F /* CasinoSlotMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13F103220DD77C000F3246F /* CasinoSlotMachineTests.swift */; };
 		E13F103E20DD77C000F3246F /* CasinoSlotMachineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13F103D20DD77C000F3246F /* CasinoSlotMachineUITests.swift */; };
-		E13F105020DD77E700F3246F /* casinobackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E13F104B20DD77E600F3246F /* casinobackground.jpg */; };
-		E13F105120DD77E700F3246F /* Club.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E13F104C20DD77E600F3246F /* Club.jpg */; };
-		E13F105220DD77E700F3246F /* Heart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E13F104D20DD77E700F3246F /* Heart.jpg */; };
-		E13F105320DD77E700F3246F /* Diamond.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E13F104E20DD77E700F3246F /* Diamond.jpg */; };
-		E13F105420DD77E700F3246F /* Spade.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E13F104F20DD77E700F3246F /* Spade.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,11 +47,6 @@
 		E13F103920DD77C000F3246F /* CasinoSlotMachineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CasinoSlotMachineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E13F103D20DD77C000F3246F /* CasinoSlotMachineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasinoSlotMachineUITests.swift; sourceTree = "<group>"; };
 		E13F103F20DD77C000F3246F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E13F104B20DD77E600F3246F /* casinobackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = casinobackground.jpg; path = ../../../../../Downloads/CardSuits/casinobackground.jpg; sourceTree = "<group>"; };
-		E13F104C20DD77E600F3246F /* Club.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Club.jpg; path = ../../../../../Downloads/CardSuits/Club.jpg; sourceTree = "<group>"; };
-		E13F104D20DD77E700F3246F /* Heart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Heart.jpg; path = ../../../../../Downloads/CardSuits/Heart.jpg; sourceTree = "<group>"; };
-		E13F104E20DD77E700F3246F /* Diamond.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Diamond.jpg; path = ../../../../../Downloads/CardSuits/Diamond.jpg; sourceTree = "<group>"; };
-		E13F104F20DD77E700F3246F /* Spade.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Spade.jpg; path = ../../../../../Downloads/CardSuits/Spade.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,11 +97,6 @@
 		E13F101C20DD77BF00F3246F /* CasinoSlotMachine */ = {
 			isa = PBXGroup;
 			children = (
-				E13F104B20DD77E600F3246F /* casinobackground.jpg */,
-				E13F104C20DD77E600F3246F /* Club.jpg */,
-				E13F104E20DD77E700F3246F /* Diamond.jpg */,
-				E13F104D20DD77E700F3246F /* Heart.jpg */,
-				E13F104F20DD77E700F3246F /* Spade.jpg */,
 				E13F101D20DD77BF00F3246F /* AppDelegate.swift */,
 				E13F101F20DD77BF00F3246F /* ViewController.swift */,
 				E13F102120DD77BF00F3246F /* Main.storyboard */,
@@ -244,12 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E13F105220DD77E700F3246F /* Heart.jpg in Resources */,
-				E13F105320DD77E700F3246F /* Diamond.jpg in Resources */,
-				E13F105020DD77E700F3246F /* casinobackground.jpg in Resources */,
 				E13F102820DD77BF00F3246F /* LaunchScreen.storyboard in Resources */,
-				E13F105120DD77E700F3246F /* Club.jpg in Resources */,
-				E13F105420DD77E700F3246F /* Spade.jpg in Resources */,
 				E13F102520DD77BF00F3246F /* Assets.xcassets in Resources */,
 				E13F102320DD77BF00F3246F /* Main.storyboard in Resources */,
 			);

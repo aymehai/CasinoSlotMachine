@@ -18,15 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Club.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="soQ-UG-wVE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Club" translatesAutoresizingMaskIntoConstraints="NO" id="soQ-UG-wVE">
                                 <rect key="frame" x="16" y="100" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Diamond.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iZ2-C2-r9P">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Diamond" translatesAutoresizingMaskIntoConstraints="NO" id="iZ2-C2-r9P">
                                 <rect key="frame" x="137" y="100" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Heart.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pDg-yB-L9B">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Spade" translatesAutoresizingMaskIntoConstraints="NO" id="pDg-yB-L9B">
                                 <rect key="frame" x="259" y="100" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -87,8 +87,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Club.jpg" width="839" height="972"/>
-        <image name="Diamond.jpg" width="839" height="972"/>
-        <image name="Heart.jpg" width="839" height="972"/>
+        <image name="Club" width="839" height="972"/>
+        <image name="Diamond" width="839" height="972"/>
+        <image name="Spade" width="839" height="972"/>
     </resources>
 </document>
