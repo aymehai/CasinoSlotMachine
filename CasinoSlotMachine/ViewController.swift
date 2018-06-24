@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var imgSlot1: UIImageView!
     @IBOutlet weak var imgSlot2: UIImageView!
     @IBOutlet weak var imgSlot3: UIImageView!
+    
     @IBOutlet weak var userBet: UILabel!
     @IBOutlet weak var userMoney: UILabel!
     
@@ -25,9 +26,9 @@ class ViewController: UIViewController {
         
         //creates an ArrayList that stores the card suit images
         var suitArray = [
+            UIImage(named: "Heart.jpg"),
             UIImage(named: "Club.jpg"),
             UIImage(named: "Diamond.jpg"),
-            UIImage(named: "Heart.jpg"),
             UIImage(named: "Spade.jpg")
         ]
         
@@ -36,8 +37,43 @@ class ViewController: UIViewController {
         imgSlot2.image = suitArray[num2]
         imgSlot3.image = suitArray[num3]
         
+        checkForWinOrLoss(num1: num1, num2: num2, num3: num3)
+        
     }
     
+    func checkForWinOrLoss(num1:Int,num2:Int,num3:Int){
+        
+        let betAmount = (userBet.text! as NSString).integerValue
+        var moneyAmount = (userMoney.text! as NSString).integerValue
+        
+        if(num1 == 0 && num2 == 0 && num3 == 0){
+            moneyAmount += betAmount * 8
+        }
+        else if(num1 == 1 && num2 == 1 && num3 == 1){
+            moneyAmount += betAmount * 10
+        }
+        else if(num1 == 2 && num2 == 2 && num3 == 2){
+            moneyAmount += betAmount * 12
+        }
+        else if(num1 == 3 && num2 == 3 && num3 == 3){
+            moneyAmount += betAmount * 20
+        }
+        else if(num1 == 3 && num2 == 2 && num3 == 1){
+            moneyAmount += betAmount * 20
+        }
+        else{
+            moneyAmount -= betAmount
+        }
+        userMoney.text = String(moneyAmount)
+        userBet.text = "0"
+        
+        if(moneyAmount >= 100000){
+            winnerAlert()
+        }
+        if(moneyAmount <= 0){
+            loserAlert()
+        }
+    }
     
     @IBAction func placeBetAlert(_ sender: Any) {
         let alertController = UIAlertController(title: "BET AMOUNT", message: "Place Your Bet", preferredStyle: UIAlertControllerStyle.alert)
@@ -54,6 +90,28 @@ class ViewController: UIViewController {
             self.userBet.text=bet
             
         }))
+        
+        present(alertController,animated: true,completion: nil)
+    }
+    
+        func winnerAlert() {
+        
+        let alertController = UIAlertController(title: "Winner Winner Chicken Dinner", message: "You Have Won!", preferredStyle: UIAlertControllerStyle.alert)
+        
+        let defaultAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+        
+        alertController.addAction(defaultAction)
+        
+        present(alertController,animated: true,completion: nil)
+    }
+    
+        func loserAlert() {
+        
+        let alertController = UIAlertController(title: "Loser Loser Double Loser", message: "You Have Lost Everything LOL!", preferredStyle: UIAlertControllerStyle.alert)
+        
+        let defaultAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+        
+        alertController.addAction(defaultAction)
         
         present(alertController,animated: true,completion: nil)
     }
