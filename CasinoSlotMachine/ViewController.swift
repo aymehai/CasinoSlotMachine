@@ -17,6 +17,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var userBet: UILabel!
     @IBOutlet weak var userMoney: UILabel!
     
+    @IBOutlet weak var lblWinCount: UILabel!
+    @IBOutlet weak var lblLoseCount: UILabel!
+    
     @IBAction func btnRoll(_ sender: Any) {
         
         //creates three random numbers
@@ -46,32 +49,45 @@ class ViewController: UIViewController {
         let betAmount = (userBet.text! as NSString).integerValue
         var moneyAmount = (userMoney.text! as NSString).integerValue
         
+        if(betAmount > 0){
+        var winCount = (lblWinCount.text! as NSString).integerValue
+        var lossCount = (lblLoseCount.text! as NSString).integerValue
+        
         if(num1 == 0 && num2 == 0 && num3 == 0){
             moneyAmount += betAmount * 8
+            winCount+=1
         }
         else if(num1 == 1 && num2 == 1 && num3 == 1){
             moneyAmount += betAmount * 10
+            winCount+=1
         }
         else if(num1 == 2 && num2 == 2 && num3 == 2){
             moneyAmount += betAmount * 12
+            winCount+=1
         }
         else if(num1 == 3 && num2 == 3 && num3 == 3){
             moneyAmount += betAmount * 20
+            winCount+=1
         }
         else if(num1 == 3 && num2 == 2 && num3 == 1){
             moneyAmount += betAmount * 20
+            winCount+=1
         }
         else{
             moneyAmount -= betAmount
+            lossCount+=1
         }
         userMoney.text = String(moneyAmount)
         userBet.text = "0"
+        lblWinCount.text = String(winCount)
+        lblLoseCount.text = String(lossCount)
         
         if(moneyAmount >= 100000){
             winnerAlert()
         }
         if(moneyAmount <= 0){
             loserAlert()
+        }
         }
     }
     

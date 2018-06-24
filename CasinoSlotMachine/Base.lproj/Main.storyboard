@@ -98,6 +98,20 @@
                                 <color key="textColor" red="0.99000235530000003" green="1" blue="0.077165735880000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zi-Mh-ny2">
+                                <rect key="frame" x="67" y="32" width="11" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CI-xa-mM8">
+                                <rect key="frame" x="67" y="61" width="11" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -106,6 +120,8 @@
                         <outlet property="imgSlot1" destination="soQ-UG-wVE" id="8rI-5Q-afX"/>
                         <outlet property="imgSlot2" destination="iZ2-C2-r9P" id="MqY-5j-Ii8"/>
                         <outlet property="imgSlot3" destination="pDg-yB-L9B" id="8Mn-ze-4Ep"/>
+                        <outlet property="lblLoseCount" destination="7CI-xa-mM8" id="8ct-pZ-d8f"/>
+                        <outlet property="lblWinCount" destination="3zi-Mh-ny2" id="x6W-8C-v1A"/>
                         <outlet property="userBet" destination="Hs3-Jy-pxc" id="P90-4z-Wfx"/>
                         <outlet property="userMoney" destination="dAL-ef-Inb" id="dPb-DJ-LLg"/>
                     </connections>
