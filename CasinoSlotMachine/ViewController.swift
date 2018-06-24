@@ -35,6 +35,27 @@ class ViewController: UIViewController {
             UIImage(named: "Spade.jpg")
         ]
         
+        var slotAnime: [UIImage] = []
+        
+        for index in 1...16 {
+            slotAnime.append(UIImage(named: "frame\(index).jpg")!)
+        }
+        
+        imgSlot1.animationImages = slotAnime
+        imgSlot1.animationDuration = 1.0
+        imgSlot1.animationRepeatCount = 1
+        imgSlot1.startAnimating()
+        
+        imgSlot2.animationImages = slotAnime
+        imgSlot2.animationDuration = 1.0
+        imgSlot2.animationRepeatCount = 2
+        imgSlot2.startAnimating()
+        
+        imgSlot3.animationImages = slotAnime
+        imgSlot3.animationDuration = 1.0
+        imgSlot3.animationRepeatCount = 3
+        imgSlot3.startAnimating()
+        
         //uses the random numbers as an index from the ArrayList and reassigns the imgSlots images to random ones
         imgSlot1.image = suitArray[num1]
         imgSlot2.image = suitArray[num2]
